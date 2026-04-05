@@ -9,6 +9,7 @@ npm install initials-js
 
 ## Usage
 ```js
-const getInitials = require("your-package-name");
+const {getInitials,getInitialsArray} = require("your-package-name");
 getInitials("John Doe"); // "JD"
+getInitialsArray(["John Doe", "Alex Marcus"]); // ["JD", "AM"]
 ```
