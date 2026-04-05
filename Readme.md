@@ -1,4 +1,4 @@
-# your-package-name
+# Initials-js
 
 A simple javascript package to get initials from a name
 
