@@ -1,0 +1,24 @@
+name: Run Tests
+
+on:
+   push:
+   pull_request:
+
+jobs:
+   test:
+      runs-on: ubunto-latest
+
+      steps:
+         - name: Checkout Code
+           uses: actions/checkout@v4
+
+         - name: Setup Node.js
+           uses: actions/setup-noode@v4
+           with:
+            bode-version: 20
+
+         - name: Install dependencies
+           run: npm install
+
+         - name: Run tests
+           run: npm test
